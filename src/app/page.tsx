@@ -19,13 +19,28 @@ const Home = () => {
           from every project.
         </p>
         <div className="flex justify-center items-center gap-4">
-          <Link href="https://www.instagram.com/officialpesonen" target="_blank" rel="noreferrer">
+          <Link
+            href="https://www.instagram.com/officialpesonen"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+          >
             <InstagramIcon className="w-8 h-8" />
           </Link>
-          <Link href="https://www.linkedin.com/in/arttupesonen/" target="_blank" rel="noreferrer">
+          <Link
+            href="https://www.linkedin.com/in/arttupesonen/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+          >
             <LinkedinIcon className="w-8 h-8" />
           </Link>
-          <Link href="https://github.com/officialpesonen" target="_blank" rel="noreferrer">
+          <Link
+            href="https://github.com/officialpesonen"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Github"
+          >
             <GithubIcon className="w-8 h-8" />
           </Link>
         </div>

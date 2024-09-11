@@ -8,7 +8,7 @@ import codetumImage from "@/assets/codetum.png";
 
 const Home = () => {
   return (
-    <div className="max-w-xl mx-auto p-4 md:p-8 xl:p-10 space-y-6">
+    <div className="max-w-xl mx-auto p-6 md:p-8 xl:p-10 space-y-6">
       <header className="relative text-center">
         <Image
           src={profileImage}

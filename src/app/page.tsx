@@ -1,11 +1,12 @@
 import Image from "next/image";
-import { Card } from "@/components/Card";
 import { GithubIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
+import { XPlatform } from "@/components/Icons";
+import { ProjectCard } from "@/components/ProjectCard";
 import profileImage from "@/assets/profile.png";
 import tilitImage from "@/assets/tilit.png";
 import codetumImage from "@/assets/codetum.png";
-import { XPlatform } from "@/components/Icons";
+import contzaImage from "@/assets/contza.png";
 
 const Home = () => {
   return (
@@ -64,25 +65,31 @@ const Home = () => {
       <main className="space-y-8">
         <section>
           <h2 className="mb-3">Currently working on</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <Link href="https://tilit.ai" target="_blank" rel="noreferrer">
-              <Card className="p-5 hover:opacity-85">
-                <Image src={tilitImage} alt="tilit.ai logo" className="h-7 w-auto mb-4" />
-                <p>
-                  Tilit revolutionises the way bookkeeping is done for both sides of the coin - small to
-                  mid-size businesses and their bookkeepers.
-                </p>
-              </Card>
-            </Link>
-            <Link href="https://codetum.com" target="_blank" rel="noreferrer">
-              <Card className="p-5 hover:opacity-85">
-                <Image src={codetumImage} alt="tilit.ai logo" className="h-6 w-auto mb-4" />
-                <p>
-                  Codetum is a modern software development company that develops performant applications and
-                  lightning-fast websites.
-                </p>
-              </Card>
-            </Link>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <ProjectCard
+              title="Tilit"
+              description="Tilit revolutionises the way bookkeeping is done for both sides of the coin - small to mid-size businesses and their bookkeepers."
+              href="https://tilit.ai"
+              logo={tilitImage}
+            />
+            <ProjectCard
+              title="Codetum"
+              description="Codetum is a modern software development company that develops performant applications andlightning-fast websites."
+              href="https://codetum.com"
+              logo={codetumImage}
+            />
+          </div>
+        </section>
+        <section>
+          <h2 className="mb-3">Previous projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <ProjectCard
+              title="Codetum"
+              description="Codetum is a modern software development company that develops performant applications andlightning-fast websites."
+              href="https://codetum.com"
+              logo={contzaImage}
+              logoClassName="h-8"
+            />
           </div>
         </section>
         {/*<section>

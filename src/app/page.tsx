@@ -8,8 +8,8 @@ import codetumImage from "@/assets/codetum.png";
 
 const Home = () => {
   return (
-    <div className="max-w-xl mx-auto p-6 md:p-8 xl:p-10 space-y-6">
-      <header className="relative text-center">
+    <div className="max-w-4xl mx-auto p-6 md:p-8 xl:p-10 space-y-8">
+      <header className="max-w-xl mx-auto text-center">
         <Image
           src={profileImage}
           alt="Arttu Pesonen"
@@ -51,10 +51,10 @@ const Home = () => {
           </Link>
         </div>
       </header>
-      <main className="space-y-6">
+      <main className="space-y-8">
         <section>
-          <h2 className="mb-2">Currently working on</h2>
-          <div className="grid grid-cols-1 gap-3">
+          <h2 className="mb-3">Currently working on</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <Link href="https://tilit.ai" target="_blank" rel="noreferrer">
               <Card className="p-5 hover:opacity-85">
                 <Image src={tilitImage} alt="tilit.ai logo" className="h-7 w-auto mb-4" />

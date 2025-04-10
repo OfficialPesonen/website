@@ -18,8 +18,10 @@ export const viewport: Viewport = {
 const RootLayout = (props: PropsWithChildren) => {
   return (
     <html lang="en">
-      <body className={inter.className}>{props.children}</body>
-      <GoogleAnalytics gaId="G-1NT3Q4F2WK" />
+      <body className={inter.className}>
+        <GoogleAnalytics gaId="G-1NT3Q4F2WK" />
+        {props.children}
+      </body>
     </html>
   );
 };

@@ -4,11 +4,11 @@
 
 @layer base {
     :root {
-        --background: #020617;
+        --background: #0a0a0a;
         --foreground: #f9fafb;
         --primary: #86198f;
         --primary-foreground: #f9fafb;
-        --card: #0b1026;
+        --card: #161616;
         --muted: #d1d5db;
     }
 
@@ -44,7 +44,7 @@
     }
 
     .gradient-border {
-        padding: 1px;
-        background-image: linear-gradient(45deg, transparent, var(--primary) 20%, transparent 100%, transparent);
+        padding: 2px;
+        background-image: linear-gradient(45deg, transparent, var(--foreground) 45%, transparent 100%, transparent);
     }
 }

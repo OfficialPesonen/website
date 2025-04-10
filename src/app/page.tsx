@@ -84,9 +84,9 @@ const Home = () => {
           <h2 className="mb-3">Previous projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <ProjectCard
-              title="Codetum"
-              description="Codetum is a modern software development company that develops performant applications andlightning-fast websites."
-              href="https://codetum.com"
+              title="Contza"
+              description="Contza is a developer-first CMS platform. Add CMS with visual editing to your website only in a minute."
+              href="https://contza.com/"
               logo={contzaImage}
               logoClassName="h-8"
             />

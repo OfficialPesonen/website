@@ -5,6 +5,7 @@ import Link from "next/link";
 import profileImage from "@/assets/profile.png";
 import tilitImage from "@/assets/tilit.png";
 import codetumImage from "@/assets/codetum.png";
+import { XPlatform } from "@/components/Icons";
 
 const Home = () => {
   return (
@@ -39,6 +40,15 @@ const Home = () => {
             className="hover:opacity-70"
           >
             <LinkedinIcon className="w-8 h-8" />
+          </Link>
+          <Link
+            href="https://x.com/officialpesonen"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="X"
+            className="hover:opacity-70"
+          >
+            <XPlatform className="size-7 fill-foreground" />
           </Link>
           <Link
             href="https://github.com/officialpesonen"

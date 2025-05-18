@@ -1,5 +1,16 @@
 import Image from "next/image";
-import { GithubIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
+import {
+  Code,
+  Database,
+  FlaskConical,
+  Frame,
+  GithubIcon,
+  Hammer,
+  InstagramIcon,
+  LayoutPanelTop,
+  LinkedinIcon,
+  Server,
+} from "lucide-react";
 import Link from "next/link";
 import { XPlatform } from "@/components/Icons";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -7,6 +18,7 @@ import profileImage from "@/assets/profile.png";
 import tilitImage from "@/assets/tilit.png";
 import codetumImage from "@/assets/codetum.png";
 import contzaImage from "@/assets/contza.png";
+import { SkillsCard } from "@/components/SkillsCard";
 
 const Home = () => {
   return (
@@ -69,19 +81,21 @@ const Home = () => {
             <ProjectCard
               title="Tilit"
               description="Tilit revolutionises the way bookkeeping is done for both sides of the coin - small to mid-size businesses and their bookkeepers."
+              role="Senior Full-stack Developer (2023 - Present)"
               href="https://tilit.ai"
               logo={tilitImage}
             />
             <ProjectCard
               title="Codetum"
               description="Codetum is a modern software development company that develops performant applications andlightning-fast websites."
+              role="Entrepreneur (2020 - Present)"
               href="https://codetum.com"
               logo={codetumImage}
             />
           </div>
         </section>
         <section>
-          <h2 className="mb-3">Previous projects</h2>
+          <h2 className="mb-3">Side projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <ProjectCard
               title="Contza"
@@ -92,26 +106,30 @@ const Home = () => {
             />
           </div>
         </section>
-        {/*<section>
-          <h2 className="mb-2">Life is great</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {[
-              "https://cdn.britannica.com/26/189726-050-7F7ECA2A/city-Croatia-Dubrovnik-Adriatic-Sea.jpg",
-              "https://cdn.britannica.com/26/189726-050-7F7ECA2A/city-Croatia-Dubrovnik-Adriatic-Sea.jpg",
-              "https://cdn.britannica.com/26/189726-050-7F7ECA2A/city-Croatia-Dubrovnik-Adriatic-Sea.jpg",
-              "https://cdn.britannica.com/26/189726-050-7F7ECA2A/city-Croatia-Dubrovnik-Adriatic-Sea.jpg",
-              "https://cdn.britannica.com/26/189726-050-7F7ECA2A/city-Croatia-Dubrovnik-Adriatic-Sea.jpg",
-              "https://cdn.britannica.com/26/189726-050-7F7ECA2A/city-Croatia-Dubrovnik-Adriatic-Sea.jpg",
-            ].map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`Image ${index + 1}`}
-                className="w-full aspect-square object-cover rounded-2xl"
-              />
-            ))}
+        <section>
+          <h2 className="mb-3">Skills</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <SkillsCard title="Languages" description="Javascript, Typescript, PHP, C#" icon={Code} />
+            <SkillsCard
+              title="Frameworks"
+              description="React, Vue.js, Next.js, Nuxt, Laravel, React Native"
+              icon={LayoutPanelTop}
+            />
+            <SkillsCard
+              title="Databases"
+              description="PostgreSQL, MySQL, MongoDB, Redis, Firestore"
+              icon={Database}
+            />
+            <SkillsCard
+              title="Cloud & DevOps"
+              description="Google Cloud Platform, Self-hosting, Docker, CI/CD pipelines"
+              icon={Server}
+            />
+            <SkillsCard title="Testing" description="Vitest, Jest, Playwright, Cypress" icon={FlaskConical} />
+            <SkillsCard title="UI/UX" description="Tailwind, Shadcn, Material UI" icon={Frame} />
+            <SkillsCard title="Tools" description="Git, Figma, Linear, Photoshop, CapCut" icon={Hammer} />
           </div>
-        </section>*/}
+        </section>
       </main>
     </div>
   );

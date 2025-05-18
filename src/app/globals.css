@@ -13,7 +13,7 @@
     }
 
     body {
-        @apply bg-background text-foreground;
+        @apply bg-background text-foreground print:bg-background print:text-foreground;
     }
 
     h1 {

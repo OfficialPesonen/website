@@ -81,7 +81,7 @@ const Home = () => {
             <ProjectCard
               title="Tilit"
               description="Tilit revolutionises the way bookkeeping is done for both sides of the coin - small to mid-size businesses and their bookkeepers."
-              role="Senior Full-stack Developer (2023 - Present)"
+              role="Co-founder (2023 - Present)"
               href="https://tilit.ai"
               logo={tilitImage}
             />
@@ -112,7 +112,7 @@ const Home = () => {
             <SkillsCard title="Languages" description="Javascript, Typescript, PHP, C#" icon={Code} />
             <SkillsCard
               title="Frameworks"
-              description="React, Vue.js, Next.js, Nuxt, Laravel, React Native"
+              description="React, Vue.js, Next.js, Nuxt, Laravel, React Native, Unity"
               icon={LayoutPanelTop}
             />
             <SkillsCard
@@ -125,7 +125,11 @@ const Home = () => {
               description="Google Cloud Platform, Self-hosting, Docker, CI/CD pipelines"
               icon={Server}
             />
-            <SkillsCard title="Testing" description="Vitest, Jest, Playwright, Cypress" icon={FlaskConical} />
+            <SkillsCard
+              title="Testing"
+              description="Unit testing with Vitest or Jest. E2E testing with Playwright, Cypress"
+              icon={FlaskConical}
+            />
             <SkillsCard title="UI/UX" description="Tailwind, Shadcn, Material UI" icon={Frame} />
             <SkillsCard title="Tools" description="Git, Figma, Linear, Photoshop, CapCut" icon={Hammer} />
           </div>
